@@ -24,7 +24,7 @@ h3 {
 .hero {
   height: 100vh;
   width: 100vw;
-  background: url("/loose-cables-L.bd9d9623.jpg") center center;
+  background: url("loose-cables-L.ca92f45c.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 32px;
@@ -158,25 +158,25 @@ h3 {
   color: #8BA5CE;
 }
 .specializations__category--electrical-installations {
-  background-image: url("/electrical-installations-S.54629114.jpg");
+  background-image: url("electrical-installations-S.72b11c49.jpg");
 }
 .specializations__category--lighting {
-  background-image: url("/lighting-S.0925b408.jpg");
+  background-image: url("lighting-S.89314d10.jpg");
 }
 .specializations__category--automation {
-  background-image: url("/automation-S.212d3751.jpg");
+  background-image: url("automation-S.4ed3d620.jpg");
 }
 .specializations__category--service {
-  background-image: url("/service-S.0836e4b7.jpg");
+  background-image: url("service-S.07ec446b.jpg");
 }
 .specializations__category--service {
-  background-image: url("/service-S.0836e4b7.jpg");
+  background-image: url("service-S.07ec446b.jpg");
 }
 .specializations__category--repairs {
-  background-image: url("/repairs-S.ec177bac.jpg");
+  background-image: url("repairs-S.6c4c17b4.jpg");
 }
 .specializations__category--monitoring {
-  background-image: url("/monitoring-S.a4d36b22.jpg");
+  background-image: url("monitoring-S.cd81ed6b.jpg");
 }
 .specializations__grid {
   display: grid;
@@ -279,4 +279,4 @@ main {
   }
 }
 
-/*# sourceMappingURL=/main.48b3db1d.css.map */
+/*# sourceMappingURL=main.57b090ce.css.map */
