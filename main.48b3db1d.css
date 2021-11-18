@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+  color: #314D76;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 128px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background: url("/loose-cables-L.bd9d9623.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 32px;
+}
+.hero__title {
+  color: #fff;
+  position: absolute;
+  left: 32px;
+  bottom: 96px;
+}
+.hero__title--accent {
+  color: #8BA5CE;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    position: relative;
+    padding: 64px 128px 128px 128px;
+  }
+  .hero__title {
+    font-size: 6rem;
+    position: absolute;
+    left: 128px;
+    bottom: 128px;
+  }
+}
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  margin: 32px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #314D76;
+  transform: translateX(0);
+  transition: transform 600ms ease-in-out;
+}
+.menu__list {
+  list-style-type: none;
+  margin-top: 96px;
+}
+.menu__item {
+  margin: 32px;
+}
+.menu__item:first-child {
+  margin: 0;
+}
+.menu__link {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.menu__logo {
+  color: #fff;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-left: 32px;
+}
+.menu__logo--light {
+  font-weight: 300;
+}
+.menu--open {
+  transform: translateX(-101%);
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: 100%;
+    background-color: transparent;
+    transition: none;
+  }
+  .menu__list {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0;
+  }
+  .menu__item {
+    font-weight: 600;
+  }
+  .menu__item:first-child {
+    margin-right: auto;
+  }
+  .menu__link {
+    padding: 16px;
+  }
+  .menu__link:hover {
+    text-decoration: underline;
+  }
+  .menu__logo {
+    margin-left: 0;
+  }
+  .menu__logo:hover {
+    text-decoration: none;
+  }
+  .menu--open {
+    transform: translateX(0);
+  }
+}
+.specializations__category {
+  padding: 96px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 360px;
+  margin: 40px 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 1px 3px #8BA5CE, 0 1px 2px #8BA5CE;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.specializations__category:hover {
+  box-shadow: 0 1px 3px #4970AD, 0 1px 2px #4970AD;
+}
+.specializations__category-title {
+  margin-bottom: 8px;
+  color: #8BA5CE;
+}
+.specializations__category--electrical-installations {
+  background-image: url("/electrical-installations-S.54629114.jpg");
+}
+.specializations__category--lighting {
+  background-image: url("/lighting-S.0925b408.jpg");
+}
+.specializations__category--automation {
+  background-image: url("/automation-S.212d3751.jpg");
+}
+.specializations__category--service {
+  background-image: url("/service-S.0836e4b7.jpg");
+}
+.specializations__category--service {
+  background-image: url("/service-S.0836e4b7.jpg");
+}
+.specializations__category--repairs {
+  background-image: url("/repairs-S.ec177bac.jpg");
+}
+.specializations__category--monitoring {
+  background-image: url("/monitoring-S.a4d36b22.jpg");
+}
+.specializations__grid {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .specializations__grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .specializations__category-text {
+    font-size: 1.2rem;
+  }
+}
+.advantages__heading {
+  margin-bottom: 16px;
+}
+.advantages__subheading {
+  color: #000;
+  font-weight: 400;
+}
+.advantages__image {
+  margin: 32px auto 64px auto;
+}
+
+@media (min-width: 1024px) {
+  .advantages {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages__split-wrapper {
+    flex: 1;
+  }
+}
+.contact__card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 24px 0;
+  font-size: 0.8rem;
+}
+.contact__card:hover {
+  box-shadow: 0 1px 3px #8BA5CE, 0 1px 2px #8BA5CE;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.contact__logo {
+  color: #314D76;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.contact__logo--font-weigth-light {
+  font-weight: lighter;
+}
+.contact__owner {
+  font-weight: lighter;
+  font-size: 22px;
+}
+.contact a {
+  color: inherit;
+}
+.contact__heading {
+  margin: 8px 0;
+}
+.contact svg {
+  margin-right: 16px;
+}
+
+@media (min-width: 1024px) {
+  .contact__grid {
+    display: flex;
+  }
+  .contact__card {
+    font-size: 1.2rem;
+    margin-right: 72px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 32px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 128px;
+  }
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */
